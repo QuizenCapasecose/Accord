@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>MetroBuild Group - AI-Powered Construction SaaS | NSW DA Approval System</title>
+  <meta name="description" content="Eliminate costly DA delays with MetroBuild's AI-powered Quality Management System. ISO 9001 compliant platform for NSW Development Applications with automated compliance checking, RFI prevention, and real-time tracking.">
+  <meta name="keywords" content="NSW Development Application, DA approval, BASIX certificate, Cumberland LEP, DCP compliance, RFI prevention, construction QMS, ISO 9001">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MetroBuild Group - AI-Powered Construction SaaS">
+  <meta property="og:description" content="Eliminate costly DA delays with automated compliance checking and RFI prevention for NSW Development Applications.">
+  <meta property="og:site_name" content="MetroBuild Group">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MetroBuild Group - AI-Powered Construction SaaS">
+  <meta name="twitter:description" content="Eliminate costly DA delays with automated compliance checking and RFI prevention for NSW Development Applications.">
+  
+  <!-- ==========================================
+       CORE WEB VITALS OPTIMIZATIONS
+       ========================================== -->
+  
+  <!-- Preconnect to Critical Third-Party Domains (Improves LCP by ~200-300ms) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.basix.net.au" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  
+  <!-- DNS Prefetch for Analytics & Tracking (Non-Critical Resources) -->
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  
+  <!-- Favicon (Prevents 404 errors that slow down page load) -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Theme Color for PWA/Mobile Browsers -->
+  <meta name="theme-color" content="#2563eb">
+  
+  <!-- 
+    IMPORTANT: Custom fonts should be preloaded here if using Google Fonts
+    However, we're using system fonts for optimal performance (see /src/styles/fonts.css)
+    If you add Google Fonts later, use this pattern:
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+  -->
+  
+  <!-- Inline Critical CSS (if needed) - Vite handles this automatically -->
+  <style>
+    /* Prevent FOUC (Flash of Unstyled Content) */
+    html {
+      background-color: #ffffff;
+    }
+    
+    /* Loading spinner shown while React app initializes */
+    #app-loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom right, #fef2f2, #fff7ed, #fefce8);
+      z-index: 9999;
+    }
+    
+    #app-loading .spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #e5e7eb;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    /* Hide loading spinner when app is ready */
+    #app:not(:empty) ~ #app-loading {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main App Container -->
+  <div id="app"></div>
+  
+  <!-- Loading Spinner (shown until React app mounts) -->
+  <div id="app-loading">
+    <div class="spinner"></div>
+  </div>
+  
+  <!-- React App Entry Point (Vite will inject the script here) -->
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- ==========================================
+       DEFERRED NON-CRITICAL SCRIPTS
+       Load after page is interactive to improve FID/INP
+       ========================================== -->
+  <script>
+    /**
+     * Defer Non-Critical JavaScript
+     * Only load analytics, chat widgets, and third-party scripts AFTER page is interactive
+     * This improves First Input Delay (FID) and Interaction to Next Paint (INP)
+     */
+    window.addEventListener('load', function() {
+      // Example: Google Analytics (load after page is interactive)
+      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      // ga('create', 'UA-XXXXX-Y', 'auto');
+      // ga('send', 'pageview');
+      
+      // Example: Live Chat Widget (load after page is interactive)
+      // var chatScript = document.createElement('script');
+      // chatScript.async = true;
+      // chatScript.src = 'https://cdn.livechat.com/widget.js';
+      // document.body.appendChild(chatScript);
+      
+      // Example: Third-Party Tracking Pixels
+      // var fbPixel = document.createElement('script');
+      // fbPixel.async = true;
+      // fbPixel.src = 'https://connect.facebook.net/en_US/fbevents.js';
+      // document.body.appendChild(fbPixel);
+    });
+  </script>
+  
+  <!-- 
+    Service Worker Registration (Optional - for PWA and offline support)
+    Uncomment to enable Progressive Web App capabilities
+  -->
+  <!--
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('ServiceWorker registration failed:', error);
+          });
+      });
+    }
+  </script>
+  -->
+  
+  <!-- No-JavaScript Fallback Message -->
+  <noscript>
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #f3f4f6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; padding: 20px;">
+      <div>
+        <h1 style="font-size: 24px; font-weight: bold; color: #1f2937; margin-bottom: 16px;">JavaScript Required</h1>
+        <p style="font-size: 16px; color: #6b7280; max-width: 500px;">
+          MetroBuild Group requires JavaScript to be enabled in your browser. 
+          Please enable JavaScript to access the full Quality Management System for NSW Development Applications.
+        </p>
+      </div>
+    </div>
+  </noscript>
+</body>
+</html>

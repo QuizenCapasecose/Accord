@@ -1,0 +1,507 @@
+/**
+ * RESPONSIVE DESIGN SYSTEM
+ * MetroBuild QMS - Mobile-First Approach
+ * 
+ * Core Web Vitals Impact:
+ * - Mobile-first = faster mobile load times (60%+ of users)
+ * - Touch targets = better FID/INP scores
+ * - Responsive images = optimized LCP
+ * 
+ * Breakpoints:
+ * - Mobile: 0-640px (sm)
+ * - Tablet: 641-1024px (md)
+ * - Desktop: 1025px+ (lg)
+ */
+
+/* ==========================================
+   BASE STYLES (Mobile-First)
+   Apply to all screen sizes, override as needed
+   ========================================== */
+
+/* Touch-friendly interactive elements (WCAG AAA: 48x48px minimum) */
+button,
+a,
+input,
+select,
+textarea,
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+  padding: 12px 16px;
+  cursor: pointer;
+  /* Prevent text selection on tap */
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Exception: Icons within buttons can be smaller */
+button svg,
+a svg {
+  min-height: auto;
+  min-width: auto;
+}
+
+/* Input fields need text selection */
+input,
+textarea,
+select {
+  user-select: text;
+}
+
+/* Prevent zoom on input focus (iOS Safari) */
+input,
+select,
+textarea {
+  font-size: 16px; /* iOS zooms if <16px */
+}
+
+/* ==========================================
+   RESPONSIVE GRID SYSTEM
+   Mobile-first grid that adapts to screen size
+   ========================================== */
+
+.dashboard,
+.grid-container {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+/* Mobile: 1 column (default) */
+.dashboard,
+.grid-container {
+  grid-template-columns: 1fr;
+}
+
+/* ==========================================
+   DATA TABLES (Mobile Optimization)
+   ========================================== */
+
+.data-table {
+  width: 100%;
+  font-size: 14px;
+  overflow-x: auto; /* Horizontal scroll on mobile */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Table cells should wrap on mobile */
+.data-table td,
+.data-table th {
+  padding: 12px 8px;
+  white-space: nowrap;
+}
+
+/* Add scroll shadow to indicate more content */
+.data-table::-webkit-scrollbar {
+  height: 6px;
+}
+
+.data-table::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.data-table::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+/* ==========================================
+   RESPONSIVE IMAGES
+   Prevent layout shift (CLS) with aspect ratio
+   ========================================== */
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Common aspect ratios */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+/* ==========================================
+   MOBILE: 0-640px (sm)
+   Default styles above, mobile-specific here
+   ========================================== */
+
+@media (max-width: 640px) {
+  /* Reduce padding on small screens */
+  .dashboard,
+  .grid-container {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  /* Stack navigation vertically */
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu a {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Full-width buttons on mobile */
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Reduce font sizes slightly */
+  h1 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  /* Hide secondary content on mobile */
+  .hide-mobile {
+    display: none;
+  }
+
+  /* Modal/dialog full-screen on mobile */
+  .modal,
+  .dialog {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  /* Cards full-width on mobile */
+  .card {
+    width: 100%;
+  }
+
+  /* Bottom navigation bar (mobile pattern) */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    z-index: 1000;
+  }
+}
+
+/* ==========================================
+   TABLET: 641-1024px (md)
+   Medium screens - 2 column layout
+   ========================================== */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .dashboard,
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* 2-column layout for cards */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Side-by-side buttons */
+  .btn-group {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn-group > * {
+    flex: 1;
+  }
+
+  /* Show tablet-specific content */
+  .show-tablet {
+    display: block;
+  }
+
+  /* Larger modals on tablet */
+  .modal,
+  .dialog {
+    max-width: 600px;
+    max-height: 80vh;
+  }
+}
+
+/* ==========================================
+   DESKTOP: 1025px+ (lg)
+   Large screens - 3+ column layout
+   ========================================== */
+
+@media (min-width: 1025px) {
+  .dashboard,
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+
+  /* 3-column layout for cards */
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 4-column layout for dense content */
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Sidebar layout */
+  .sidebar-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+  }
+
+  /* Hover effects (desktop only) */
+  .card:hover,
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  /* Show desktop-specific content */
+  .show-desktop {
+    display: block;
+  }
+
+  /* Larger modals on desktop */
+  .modal,
+  .dialog {
+    max-width: 800px;
+    max-height: 90vh;
+  }
+
+  /* Data table doesn't need horizontal scroll */
+  .data-table {
+    overflow-x: visible;
+  }
+
+  /* Increase font size for better readability */
+  .data-table {
+    font-size: 16px;
+  }
+}
+
+/* ==========================================
+   ULTRA-WIDE: 1440px+ (xl)
+   Extra large screens - 4+ columns
+   ========================================== */
+
+@media (min-width: 1440px) {
+  .dashboard,
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Center content on ultra-wide screens */
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================
+   PRINT STYLES
+   Optimize for printing
+   ========================================== */
+
+@media print {
+  /* Hide navigation, buttons, etc. */
+  .nav-menu,
+  .bottom-nav,
+  button,
+  .hide-print {
+    display: none !important;
+  }
+
+  /* Expand content to full width */
+  .dashboard,
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  /* Remove shadows and borders */
+  .card {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+
+  /* Black text for better print contrast */
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  /* Page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Avoid breaking cards across pages */
+  .card {
+    page-break-inside: avoid;
+  }
+}
+
+/* ==========================================
+   ACCESSIBILITY - PREFERS REDUCED MOTION
+   Respect user's motion preferences
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================
+   DARK MODE SUPPORT
+   Respect user's color scheme preference
+   ========================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #374151;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  .card {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+  }
+}
+
+/* ==========================================
+   UTILITY CLASSES
+   ========================================== */
+
+/* Hide/show based on screen size */
+@media (max-width: 640px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* Show only on specific sizes */
+.show-mobile,
+.show-tablet,
+.show-desktop {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .show-tablet {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .show-desktop {
+    display: block !important;
+  }
+}
+
+/* ==========================================
+   SAFE AREAS (iOS Notch/Dynamic Island)
+   ========================================== */
+
+@supports (padding: max(0px)) {
+  .safe-top {
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+
+  .safe-bottom {
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  .safe-left {
+    padding-left: max(12px, env(safe-area-inset-left));
+  }
+
+  .safe-right {
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+}
+
+/* ==========================================
+   LANDSCAPE ORIENTATION (Mobile)
+   ========================================== */
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  /* Reduce vertical spacing in landscape */
+  .dashboard,
+  .grid-container {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  /* Side-by-side layout in landscape */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

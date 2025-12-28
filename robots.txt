@@ -1,0 +1,62 @@
+# MetroBuild Group - Construction QMS
+# Robots.txt for Search Engine Optimization
+# Last Updated: 2025-12-27
+
+# ========================================
+# DEFAULT RULE - ALLOW ALL BOTS
+# ========================================
+
+User-agent: *
+Allow: /
+
+# ========================================
+# DISALLOW PATTERNS
+# Block private/admin areas, API endpoints
+# ========================================
+
+# Admin and authentication pages
+Disallow: /admin/
+Disallow: /login
+Disallow: /logout
+Disallow: /signup
+
+# API endpoints (prevent indexing of JSON responses)
+Disallow: /api/
+Disallow: /graphql
+
+# User-specific pages (prevent duplicate content)
+Disallow: /user/
+Disallow: /account/
+Disallow: /dashboard/
+Disallow: /settings/
+
+# Temporary files
+Disallow: /temp/
+Disallow: /private/
+
+# Search and filter pages (duplicate content)
+Disallow: /search?
+Disallow: /*?q=
+Disallow: /*?filter=
+
+# ========================================
+# ALLOW PATTERNS
+# Override disallow rules for important content
+# ========================================
+
+# Allow PDF documents and downloads
+Allow: /downloads/
+
+# Allow images and media files
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.pdf$
+
+# ========================================
+# SITEMAP LOCATION
+# ========================================
+
+Sitemap: https://metrobuild-da-app.com/sitemap.xml

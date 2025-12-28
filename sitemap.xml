@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 
+    MetroBuild Group - Construction QMS Sitemap
+    Last Updated: 2025-12-27
+    
+    Priority Guidelines:
+    1.0 = Homepage (most important)
+    0.9 = High-value landing pages (primary keywords)
+    0.8 = Important pages (secondary keywords)
+    0.7 = Supporting pages (tools, guides)
+    0.6 = Tertiary pages (showcases, demos)
+    
+    Change Frequency:
+    daily = Homepage, dynamic content
+    weekly = High-traffic pages, new content
+    monthly = Stable content, guides
+    quarterly = Evergreen content
+  -->
+  
+  <!-- ========================================
+       TIER 1: HOMEPAGE (Priority: 1.0)
+       Highest priority, updated frequently
+       ======================================== -->
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 2: HIGH-VALUE LANDING PAGES (Priority: 0.9)
+       SEO-optimized pages targeting primary keywords
+       6,850+ monthly search volume
+       ======================================== -->
+  
+  <!-- Landing Page 1: "How to Avoid DA Delays" (2,400/mo searches) -->
+  <url>
+    <loc>https://metrobuild-da-app.com/how-to-avoid-da-delays</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Landing Page 2: "BASIX Certificate Residential" (1,600/mo searches) -->
+  <url>
+    <loc>https://metrobuild-da-app.com/basix-certificate-residential</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Landing Page 3: "NSW DA Assessment Process" (1,900/mo searches) -->
+  <url>
+    <loc>https://metrobuild-da-app.com/nsw-da-assessment-process</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Landing Page 4: "RFI Construction Meaning" (950/mo searches) -->
+  <url>
+    <loc>https://metrobuild-da-app.com/rfi-construction-meaning</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 3: CORE PRODUCT PAGES (Priority: 0.8)
+       Main application features and tools
+       ======================================== -->
+  
+  <!-- Product Pages -->
+  <url>
+    <loc>https://metrobuild-da-app.com/projects</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/process</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/stages</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/documents</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/compliance</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Business Pages -->
+  <url>
+    <loc>https://metrobuild-da-app.com/pricing</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/about</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/contact</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 4: GUIDES & RESOURCES (Priority: 0.7)
+       Educational content, SEO value
+       ======================================== -->
+  
+  <!-- Cumberland Council Specific -->
+  <url>
+    <loc>https://metrobuild-da-app.com/cumberland-dcp-guide</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/cumberland-lep-2021</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- DA Process Guides -->
+  <url>
+    <loc>https://metrobuild-da-app.com/pre-lodgement-guide</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/lodgement-guide</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/assessment-timeline</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/determination-guide</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/post-consent-requirements</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Document Templates -->
+  <url>
+    <loc>https://metrobuild-da-app.com/document-templates</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/templates/da-application-form</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/templates/statement-environmental-effects</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/templates/architectural-plans</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/templates/basix-certificate</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 5: TOOLS & FEATURES (Priority: 0.7)
+       Interactive tools and calculators
+       ======================================== -->
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/compliance-checker</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/rfi-tracker</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/kpi-dashboard</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/validation-dashboard</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 6: QUALITY & ISO PAGES (Priority: 0.6)
+       Quality management, Kaizen, ISO 9001
+       ======================================== -->
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/quality-management</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/kaizen-continuous-improvement</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/iso-9001-compliance</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 7: BLOG & NEWS (Priority: 0.6)
+       Content marketing, updates
+       ======================================== -->
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/blog</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/blog/top-reasons-da-rejected-nsw</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/blog/understanding-basix-requirements</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/blog/rfi-prevention-strategies</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 8: LEGAL & SUPPORT (Priority: 0.5)
+       Required pages, low SEO value
+       ======================================== -->
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/privacy-policy</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/terms-of-service</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/help</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/faq</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- ========================================
+       TIER 9: COMPONENT SHOWCASES (Priority: 0.4)
+       Development/demo pages, noindex recommended
+       ======================================== -->
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/showcase/solution-page</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/showcase/metric-cards</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://metrobuild-da-app.com/showcase/data-tables</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+</urlset>
